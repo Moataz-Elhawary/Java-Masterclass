@@ -1,0 +1,59 @@
+Your challenge is to create the Worker class,
+the Employee class, and either the SalariedEmployee or the HourlyEmployee class.
+
+- A salaried employee is paid based on some percentage of his or her annual salary.
+If this person is retired, then the salary may be 100 percent of this amount,
+but it is generally reduced somewhat.
+
+- An hourly employee is paid by the hours worked and the hourly rate they agreed to work for.
+An hourly employee may also get double pay if they work over a certain number of hours.
+
+
+For each class, create the attributes and methods shown on this diagram.
+
+Create a main method that will create either a SalariedEmployee or HourlyEmployee,
+and call the methods, getAge, collectPay,
+and the method shown for the specific type of class you decide to implement.
+
+Worker (Base Class)
+├── Employee (Derived from Worker)
+    ├── SalariedEmployee (Derived from Employee)
+    └── HourlyEmployee (Derived from Employee)
+
+Class Details:
+-> Worker Class
+
+- Attributes:
+name (String)
+birthDate (String) - format "YYYY-MM-DD"
+
+- Methods:
+getAge() - calculates age based on birthDate
+collectPay() - (to be overridden by child classes)
+
+-> Employee Class (extends Worker)
+
+- Attributes:
+employeeId (String)
+hireDate (String) - format "YYYY-MM-DD"
+
+- Methods:
+(Inherits all from Worker)
+
+-> SalariedEmployee Class (extends Employee)
+- Attributes:
+annualSalary (double)
+isRetired (boolean)
+
+- Methods:
+collectPay() - calculates pay based on annual salary
+retire() - sets isRetired to true
+
+-> HourlyEmployee Class (extends Employee)
+
+- Attributes:
+hourlyPayRate (double)
+
+- Methods:
+collectPay() - calculates pay based on hours worked
+getDoublePay() - returns pay for double hours
