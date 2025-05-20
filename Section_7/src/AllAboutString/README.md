@@ -12,18 +12,50 @@ A Java implementation of a fast-food restaurant management system for burger mea
 - [Improvement Ideas](#improvement-ideas)
 
 ## Class Hierarchy
-
-BillsBurgerChallenge
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ BillsBurgerChallenge │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+▲
 │
-├── Item (Base Class)
+┌────────────────┴─────────────────┐
+│ │
+┌─────────────────────┐ ┌─────────────────────┐
+│ Item │ │ MealOrder │
+├─────────────────────┤ ├─────────────────────┤
+│ - type: String │ │ - burger: Burger │
+│ - name: String │ │ - drink: Item │
+│ - price: double │ │ - side: Item │
+│ - size: String │ ├─────────────────────┤
+├─────────────────────┤ │ + getTotalPrice() │
+│ + getAdjustedPrice()│ │ + printItemizedList()│
+│ + printItem() │ │ + addBurgerToppings()│
+└──────────┬──────────┘ └─────────────────────┘
 │
-├── Burger (extends Item)
-│   └── DeluxeBurger (extends Burger)
+┌──────────────┴───────────────┐
+│ │
+┌─────────────────────┐ ┌─────────────────────┐
+│ Burger │ │ Main │
+├─────────────────────┤ ├─────────────────────┤
+│ - extra1: Item │ │ (Entry Point) │
+│ - extra2: Item │ │ - main() │
+│ - extra3: Item │ └─────────────────────┘
+├─────────────────────┤
+│ + addToppings() │
+│ + getExtraPrice() │
+│ + printItemizedList()│
+└──────────┬──────────┘
 │
-├── MealOrder (Handles meal Composition)
-│
-└── Main (Entry Point) Demo.
-
+┌──────────┴──────────┐
+│ DeluxeBurger │
+├─────────────────────┤
+│ - deluxe1: Item │
+│ - deluxe2: Item │
+├─────────────────────┤
+│ + addToppings() │
+│ (Overrides methods) │
+└─────────────────────┘
+```
 
 
 ## Design Overview
@@ -79,7 +111,8 @@ FRIES:  1.50
 TOTAL PRICE:  9.00
 ```
 
-Key Design Patterns
+Key Design Patterns :
+```
 Inheritance: Item → Burger → DeluxeBurger hierarchy
 
 Polymorphism: Overridden methods in DeluxeBurger
@@ -87,9 +120,10 @@ Polymorphism: Overridden methods in DeluxeBurger
 Composition: MealOrder contains items
 
 Encapsulation: Private fields with public methods
-
+```
 
 This README includes:
+```
 1. Clear visual hierarchy diagram
 2. Concise feature descriptions
 3. Practical usage examples
@@ -97,4 +131,4 @@ This README includes:
 5. Design pattern explanations
 6. Improvement suggestions
 7. Running instructions
-
+```
