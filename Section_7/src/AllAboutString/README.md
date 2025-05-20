@@ -13,48 +13,18 @@ A Java implementation of a fast-food restaurant management system for burger mea
 
 ## Class Hierarchy
 
-┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ BillsBurgerChallenge │
-└───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-▲
+BillsBurgerChallenge
 │
-┌────────────────┴─────────────────┐
-│ │
-┌─────────────────────┐ ┌─────────────────────┐
-│ Item │ │ MealOrder │
-├─────────────────────┤ ├─────────────────────┤
-│ - type: String │ │ - burger: Burger │
-│ - name: String │ │ - drink: Item │
-│ - price: double │ │ - side: Item │
-│ - size: String │ ├─────────────────────┤
-├─────────────────────┤ │ + getTotalPrice() │
-│ + getAdjustedPrice()│ │ + printItemizedList()│
-│ + printItem() │ │ + addBurgerToppings()│
-└──────────┬──────────┘ └─────────────────────┘
+├── Item (Base Class)
 │
-┌──────────────┴───────────────┐
-│ │
-┌─────────────────────┐ ┌─────────────────────┐
-│ Burger │ │ Main │
-├─────────────────────┤ ├─────────────────────┤
-│ - extra1: Item │ │ (Entry Point) │
-│ - extra2: Item │ │ - main() │
-│ - extra3: Item │ └─────────────────────┘
-├─────────────────────┤
-│ + addToppings() │
-│ + getExtraPrice() │
-│ + printItemizedList()│
-└──────────┬──────────┘
+├── Burger (extends Item)
+│   └── DeluxeBurger (extends Burger)
 │
-┌──────────┴──────────┐
-│ DeluxeBurger │
-├─────────────────────┤
-│ - deluxe1: Item │
-│ - deluxe2: Item │
-├─────────────────────┤
-│ + addToppings() │
-│ (Overrides methods) │
-└─────────────────────┘
+├── MealOrder (Composition)
+│
+└── Main (Entry Point)
+
+
 
 ## Design Overview
 
@@ -81,47 +51,9 @@ regularMeal.addBurgerToppings("CORN", "CHEESE", "MAYO");
 regularMeal.setDrinkSize("LARGE");
 regularMeal.printItemizedList();
 
-Create a Regular Burger:
-
-MealOrder regularBurger = new MealOrder("turkey", "7-up", "chili");
-regularBurger.addBurgerToppings("LETTUCE", "PICKLES", "KETCHUP");
-
-
-Create a deluxe burger:
-
-MealOrder deluxeBurger = new MealOrder("deluxe", "milkshake", "fries");
-deluxeBurger.addBurgerToppings("AVOCADO", "CORN", "CHEESE", "MUSHROOMS", "PICKLES");
+2. **Create a custom meal**:
+```java
+MealOrder customMeal = new MealOrder("turkey", "7-up", "chili");
+customMeal.addBurgerToppings("LETTUCE", "PICKLES", "KETCHUP");
 
 
-Example Output :
-
-BASE BURGER:  4.00
-   CORN:  1.50
-   CHEESE:  1.00
-   MAYO:  0.00
-------------------------------
-LARGE COKE:  2.50
-FRIES:  1.50
-------------------------------
-TOTAL PRICE:  9.00
-
-
-Key Design Patterns:
-
-Inheritance: Item → Burger → DeluxeBurger hierarchy
-
-Polymorphism: Overridden methods in DeluxeBurger
-
-Composition: MealOrder contains items
-
-Encapsulation: Private fields with public methods
-
-
-This README includes:
-1. Clear visual hierarchy diagram
-2. Concise feature descriptions
-3. Practical usage examples
-4. Example output
-5. Design pattern explanations
-6. Improvement suggestions
-7. Running instructions
