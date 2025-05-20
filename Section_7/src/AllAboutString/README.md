@@ -44,16 +44,24 @@ The system models a burger restaurant with:
 
 ## Usage
 
-1. **Create a default meal**:
-```java
+Usage Examples
+1. Create a Regular Meal
+java
 MealOrder regularMeal = new MealOrder();
-regularMeal.addBurgerToppings("CORN", "CHEESE", "MAYO");
+regularMeal.addBurgerToppings("BACON", "CHEESE", "KETCHUP");
 regularMeal.setDrinkSize("LARGE");
 regularMeal.printItemizedList();
-
-2. **Create a custom meal**:
-```java
-MealOrder customMeal = new MealOrder("turkey", "7-up", "chili");
-customMeal.addBurgerToppings("LETTUCE", "PICKLES", "KETCHUP");
+2. Create a Custom Meal
+java
+MealOrder customMeal = new MealOrder("custom", "iced tea", "coleslaw");
+customMeal.addBurgerToppings("LETTUCE", "TOMATO", "MAYO");
+customMeal.printItemizedList();
+3. Create a Deluxe Meal
+java
+MealOrder deluxeMeal = new MealOrder("deluxe", "soda", "fries");
+deluxeMeal.addBurgerToppings(
+    "BACON", "CHEESE", "AVOCADO", "MUSHROOMS", "PICKLES"
+);
+deluxeMeal.printItemizedList();
 
 
