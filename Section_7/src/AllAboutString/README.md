@@ -20,9 +20,9 @@ BillsBurgerChallenge
 ├── Burger (extends Item)
 │   └── DeluxeBurger (extends Burger)
 │
-├── MealOrder (Composition)
+├── MealOrder (Handles meal Composition)
 │
-└── Main (Entry Point)
+└── Main (Entry Point) Demo.
 
 
 
@@ -42,26 +42,59 @@ The system models a burger restaurant with:
 ✔ Detailed itemized receipts  
 ✔ Default and custom meal constructors  
 
-## Usage
+## Usage Examples :
 
-Usage Examples
-1. Create a Regular Meal
-java
+1. **Create a Regular Meal**:
+```java
 MealOrder regularMeal = new MealOrder();
-regularMeal.addBurgerToppings("BACON", "CHEESE", "KETCHUP");
+regularMeal.addBurgerToppings("SALAD", "CHEESE", "KETCHUP");
 regularMeal.setDrinkSize("LARGE");
 regularMeal.printItemizedList();
-2. Create a Custom Meal
-java
+```
+2. **Create a Custom Meal**:
+```java
 MealOrder customMeal = new MealOrder("custom", "iced tea", "coleslaw");
 customMeal.addBurgerToppings("LETTUCE", "TOMATO", "MAYO");
 customMeal.printItemizedList();
-3. Create a Deluxe Meal
-java
+```
+3. **Create a Deluxe Meal**:
+```java
 MealOrder deluxeMeal = new MealOrder("deluxe", "soda", "fries");
 deluxeMeal.addBurgerToppings(
-    "BACON", "CHEESE", "AVOCADO", "MUSHROOMS", "PICKLES"
+    "SALAD", "CHEESE", "AVOCADO", "MUSHROOMS", "PICKLES"
 );
 deluxeMeal.printItemizedList();
+```
 
+Example Output:
+```
+BASE BURGER:  4.00
+   BACON:  1.50
+   CHEESE:  1.00
+   MAYO:  0.00
+------------------------------
+LARGE COKE:  2.50
+FRIES:  1.50
+------------------------------
+TOTAL PRICE:  9.00
+```
+
+Key Design Patterns
+Inheritance: Item → Burger → DeluxeBurger hierarchy
+
+Polymorphism: Overridden methods in DeluxeBurger
+
+Composition: MealOrder contains items
+
+Encapsulation: Private fields with public methods
+
+
+This README includes:
+1. Clear visual hierarchy diagram
+2. Concise feature descriptions
+3. Practical usage examples
+4. Example output
+5. Design pattern explanations
+6. Improvement suggestions
+7. Running instructions
 
