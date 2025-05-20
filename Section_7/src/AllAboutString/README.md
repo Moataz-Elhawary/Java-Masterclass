@@ -14,47 +14,48 @@ A Java implementation of a fast-food restaurant management system for burger mea
 ## Class Hierarchy
 ```
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ BillsBurgerChallenge │
+│                                            BillsBurgerChallenge                                               │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-▲
-│
-┌────────────────┴─────────────────┐
-│ │
-┌─────────────────────┐ ┌─────────────────────┐
-│ Item │ │ MealOrder │
-├─────────────────────┤ ├─────────────────────┤
-│ - type: String │ │ - burger: Burger │
-│ - name: String │ │ - drink: Item │
-│ - price: double │ │ - side: Item │
-│ - size: String │ ├─────────────────────┤
-├─────────────────────┤ │ + getTotalPrice() │
-│ + getAdjustedPrice()│ │ + printItemizedList()│
-│ + printItem() │ │ + addBurgerToppings()│
-└──────────┬──────────┘ └─────────────────────┘
-│
-┌──────────────┴───────────────┐
-│ │
-┌─────────────────────┐ ┌─────────────────────┐
-│ Burger │ │ Main │
-├─────────────────────┤ ├─────────────────────┤
-│ - extra1: Item │ │ (Entry Point) │
-│ - extra2: Item │ │ - main() │
-│ - extra3: Item │ └─────────────────────┘
-├─────────────────────┤
-│ + addToppings() │
-│ + getExtraPrice() │
-│ + printItemizedList()│
-└──────────┬──────────┘
-│
-┌──────────┴──────────┐
-│ DeluxeBurger │
-├─────────────────────┤
-│ - deluxe1: Item │
-│ - deluxe2: Item │
-├─────────────────────┤
-│ + addToppings() │
-│ (Overrides methods) │
-└─────────────────────┘
+                                                      ▲
+                                                      │
+                                     ┌────────────────┴─────────────────┐
+                                     │                                  │
+                          ┌─────────────────────┐            ┌──────────────────────┐
+                          │        Item         │            │      MealOrder       │
+                          ├─────────────────────┤            ├──────────────────────┤
+                          │ - type: String      │            │ - burger: Burger     │
+                          │ - name: String      │            │ - drink: Item        │
+                          │ - price: double     │            │ - side: Item         │
+                          │ - size: String      │            ├──────────────────────┤
+                          ├─────────────────────┤            │ + getTotalPrice()    │
+                          │ + getAdjustedPrice()│            │ + printItemizedList()│
+                          │ + printItem()       │            │ + addBurgerToppings()│
+                          └──────────┬──────────┘            └──────────────────────┘
+                                     │
+                      ┌──────────────┴───────────────┐
+                      │                              │
+               ┌──────────────────────┐   ┌─────────────────────┐
+               │       Burger         │   │       Main          │
+               ├──────────────────────┤   ├─────────────────────┤
+               │ - extra1: Item       │   │ (Entry Point)       │
+               │ - extra2: Item       │   │ - main()            │
+               │ - extra3: Item       │   └─────────────────────┘
+               ├──────────────────────┤
+               │ + addToppings()      │
+               │ + getExtraPrice()    │
+               │ + printItemizedList()│
+               └──────────┬───────────┘
+                          │
+               ┌──────────┴──────────┐
+               │    DeluxeBurger     │
+               ├─────────────────────┤
+               │ - deluxe1: Item     │
+               │ - deluxe2: Item     │
+               ├─────────────────────┤
+               │ + addToppings()     │
+               │ (Overrides methods) │
+               └─────────────────────┘
+
 ```
 
 
