@@ -29,14 +29,14 @@ This repository contains materials and exercises from the **"أساسيات وج
 - Java platform overview
 - Setting up development environment
 
-### Section 2-6: Java Fundamentals ![2](https://img.shields.io/badge/2-blue) ![3](https://img.shields.io/badge/3-blue) ![4](https://img.shields.io/badge/4-blue) ![5](https://img.shields.io/badge/5-blue) ![6](https://img.shields.io/badge/6-blue)
+### Section 2-6: Java Fundamentals ![2](https://img.shields.io/badge/2-blue) ![3](https://img.shields.io/badge/3-blue) [![4](https://img.shields.io/badge/4-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_4) [![5](https://img.shields.io/badge/5-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_5) [![6](https://img.shields.io/badge/6-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_6)
 - Basic syntax and program structure
 - Expressions, statements, and method overloading
 - Control flow (conditionals, loops)
 - Transitioning from JShell to IntelliJ IDEA
 - Building interactive applications
 
-### Section 7-13,16: Object-Oriented Programming ![7](https://img.shields.io/badge/7-blue) ![8](https://img.shields.io/badge/8-blue) ![9](https://img.shields.io/badge/9-blue) ![10](https://img.shields.io/badge/10-blue) ![11](https://img.shields.io/badge/11-blue) ![12](https://img.shields.io/badge/12-blue) ![13](https://img.shields.io/badge/13-blue) ![16](https://img.shields.io/badge/16-blue)
+### Section 7-13,16: Object-Oriented Programming [![7](https://img.shields.io/badge/7-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_7) [![8](https://img.shields.io/badge/8-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_8) ![9](https://img.shields.io/badge/9-blue) ![10](https://img.shields.io/badge/10-blue) ![11](https://img.shields.io/badge/11-blue) ![12](https://img.shields.io/badge/12-blue) ![13](https://img.shields.io/badge/13-blue) ![16](https://img.shields.io/badge/16-blue)
 - Classes, inheritance, and polymorphism
 - Composition and encapsulation
 - Abstraction and interfaces
@@ -104,27 +104,7 @@ This course provides comprehensive coverage of Java programming, from basic synt
 
 -- --
 
-### [Section_4 :](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_4)
 
--- --
-
-### [Section_5 :](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_5)
-
--- --
-
-### [Section_6 :]()
-
---- ---
-
-### [Section_7 :]()
-
--- --
-
-### [Section_8 :]()
-
--- --
-
-1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
 
 ![1](https://img.shields.io/badge/1-blue)   
 ![2](https://img.shields.io/badge/2-blue)   
