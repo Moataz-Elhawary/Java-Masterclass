@@ -25,25 +25,25 @@ This repository contains materials and exercises from the **"أساسيات وج
 
 ## Course Structure
 
-### Section 1: Introduction to Java ![1](https://img.shields.io/badge/1-blue) 
+### Section 1: Introduction to Java 
 - Java platform overview
 - Setting up development environment
 
-### Section 2-6: Java Fundamentals ![2](https://img.shields.io/badge/2-blue) ![3](https://img.shields.io/badge/3-blue) [![4](https://img.shields.io/badge/4-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_4) [![5](https://img.shields.io/badge/5-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_5) [![6](https://img.shields.io/badge/6-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_6)
+### Section 2-6: Java Fundamentals  [![4](https://img.shields.io/badge/4-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_4) [![5](https://img.shields.io/badge/5-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_5) [![6](https://img.shields.io/badge/6-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_6)
 - Basic syntax and program structure
 - Expressions, statements, and method overloading
 - Control flow (conditionals, loops)
 - Transitioning from JShell to IntelliJ IDEA
 - Building interactive applications
 
-### Section 7-13,16: Object-Oriented Programming [![7](https://img.shields.io/badge/7-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_7) [![8](https://img.shields.io/badge/8-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_8) ![9](https://img.shields.io/badge/9-blue) ![10](https://img.shields.io/badge/10-blue) ![11](https://img.shields.io/badge/11-blue) ![12](https://img.shields.io/badge/12-blue) ![13](https://img.shields.io/badge/13-blue) ![16](https://img.shields.io/badge/16-blue)
+### Section 7-13,16: Object-Oriented Programming [![7](https://img.shields.io/badge/7-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_7) [![8](https://img.shields.io/badge/8-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_8) [![9](https://img.shields.io/badge/9-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_9) [![10](https://img.shields.io/badge/10-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_10) ![11](https://img.shields.io/badge/11-blue) ![12](https://img.shields.io/badge/12-blue) ![13](https://img.shields.io/badge/13-blue) ![16](https://img.shields.io/badge/16-blue)
 - Classes, inheritance, and polymorphism
 - Composition and encapsulation
 - Abstraction and interfaces
 - Nested and anonymous classes
 - Immutability and the `final` keyword
 
-### Section 9-10,15: Data Management ![9](https://img.shields.io/badge/9-blue) ![10](https://img.shields.io/badge/10-blue) ![15](https://img.shields.io/badge/15-blue)
+### Section 9-10,15: Data Management [![9](https://img.shields.io/badge/9-blue)](https://github.com/Moataz-Elhawary/Java-Masterclass/tree/main/Section_9) ![10](https://img.shields.io/badge/10-blue) ![15](https://img.shields.io/badge/15-blue)
 - Arrays (single and multi-dimensional)
 - Collections Framework (Lists, Sets, Maps)
 - Iterators and autoboxing
@@ -106,5 +106,5 @@ This course provides comprehensive coverage of Java programming, from basic synt
 
 
 
-![1](https://img.shields.io/badge/1-blue)   
-![2](https://img.shields.io/badge/2-blue)   
+[![](https://img.shields.io/badge/1-blue)]()   
+   
